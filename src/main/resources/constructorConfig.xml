@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="constructorStudent" class="com.craft.ConstructorStudent">
+        <constructor-arg value="101"/>
+        <constructor-arg value="Omer Abubeker"/>
+        <constructor-arg value="20"/>
+    </bean>
+
+
+    <bean id="address" class="com.craft.Address">
+        <constructor-arg value="Addis Ababa"/>
+        <constructor-arg value="Ethiopia"/>
+    </bean>
+
+    <bean id="addressStudent" class="com.craft.AddressStudent">
+        <constructor-arg value="102"/>
+        <constructor-arg value="Omer Abubeker"/>
+        <constructor-arg ref="address"/>
+    </bean>
+
+
+</beans>
