@@ -66,8 +66,6 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 ```
 
-Replace `YOUR_PASSWORD` with your local MySQL password. Never commit real database credentials to GitHub.
-
 ## Running the Application
 
 On Windows, open the project terminal and run:
